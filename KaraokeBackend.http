@@ -1,0 +1,6 @@
+@KaraokeBackend_HostAddress = http://localhost:5172
+
+GET {{KaraokeBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
