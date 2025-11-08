@@ -59,3 +59,15 @@ C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\ref\KaraokeBacken
 C:\Users\dani\Documents\Github\KaraokeBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\dani\Documents\Github\KaraokeBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\dani\Documents\Github\KaraokeBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\KaraokeBackend.sourcelink.json
+C:\Users\dani\Documents\Github\KaraokeBackend\bin\Debug\net9.0\KaraokeBackend.staticwebassets.runtime.json
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\ajo3ha272k-42jt3e4o8t.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\3n1805a5rd-429x64oo5m.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\y54x8mxbvn-qbmnm9zwts.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\ypparnyqcu-ly2pa8mwfu.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\m6hmrt4ocl-lvipj67fue.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\m2jo4393li-csad91pf9p.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\em5qk0a675-gfhv86ovez.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\dqazqjd7yn-svwfdlawnx.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\nznbb1bg4u-tqpj2apmhm.gz
+C:\Users\dani\Documents\Github\KaraokeBackend\obj\Debug\net9.0\compressed\g4t74hqlym-s63kc4uxh4.gz

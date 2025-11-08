@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|c:\\users\\dani\\documents\\github\\karaokebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|c:\\users\\dani\\documents\\github\\karaokebackend\\service\\queueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|solutionrelative:service\\queueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|c:\\users\\dani\\documents\\github\\karaokebackend\\models\\queueitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|solutionrelative:models\\queueitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|c:\\users\\dani\\documents\\github\\karaokebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155AA600-0897-5081-0C82-8AB81E3FD167}|KaraokeBackend.csproj|c:\\users\\dani\\documents\\github\\karaokebackend\\controllers\\karaokecontrolle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -49,8 +49,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAPYUAAAAAAAAAAAIwBEVAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-11-03T13:08:08.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:08:08.958Z"
             },
             {
               "$type": "Document",
@@ -62,18 +61,17 @@
               "RelativeToolTip": "Controllers\\KaraokeControlle.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T12:54:19.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T12:54:19.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QueueService.cs",
               "DocumentMoniker": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\Service\\QueueService.cs",
               "RelativeDocumentMoniker": "Service\\QueueService.cs",
               "ToolTip": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\Service\\QueueService.cs",
               "RelativeToolTip": "Service\\QueueService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T12:52:18.547Z",
               "EditorCaption": ""
@@ -81,19 +79,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "KaraokeBackend",
+              "Title": "KaraokeBackend.csproj",
               "DocumentMoniker": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\KaraokeBackend.csproj",
               "RelativeDocumentMoniker": "KaraokeBackend.csproj",
               "ToolTip": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\KaraokeBackend.csproj",
               "RelativeToolTip": "KaraokeBackend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-03T12:51:33.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T12:51:33.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "QueueItem.cs",
               "DocumentMoniker": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\Models\\QueueItem.cs",
               "RelativeDocumentMoniker": "Models\\QueueItem.cs",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "Models\\QueueItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T15:44:26.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T15:44:26.384Z"
             },
             {
               "$type": "Document",
@@ -114,12 +110,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-02T13:58:17.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T13:58:17.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dani\\Documents\\Github\\KaraokeBackend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

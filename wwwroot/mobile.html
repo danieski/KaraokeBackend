@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Karaoke - Control</title>
+    <link rel="stylesheet" href="/css/mobile.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Búsqueda -->
+        <div class="search-box">
+            <input type="search" 
+                   id="search" 
+                   class="search-input"
+                   placeholder="Buscar canciones..."
+                   autocomplete="off">
+        </div>
+
+        <!-- Resultados de búsqueda -->
+        <div class="search-results" id="searchResults"></div>
+
+        <!-- Cola de reproducción -->
+        <div class="queue-section">
+            <div class="queue-header">
+                <h2 class="queue-title">Cola de reproducción</h2>
+                <span class="queue-count" id="queueCount">0</span>
+            </div>
+            <div id="queue"></div>
+        </div>
+
+        <!-- Mensajes de error -->
+        <div id="error" class="error"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/karaoke-service.js"></script>
+    <script src="/js/mobile.js"></script>
+</body>
+</html>

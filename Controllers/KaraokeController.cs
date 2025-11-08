@@ -25,9 +25,11 @@ namespace KaraokeBackend.Controllers
         [HttpGet("search")]
         public async Task<IActionResult> Search(string q)
         {
+            //Obtengo la api de youtube no se como de la config
             var apiKey = _config["Youtube:ApiKey"];
+            //El usuario me ha pasado la query
             var query = $"{q} karaoke";
-
+    
             var url = $"https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q={query}&key={apiKey}";
 
             var client = _httpFactory.CreateClient();

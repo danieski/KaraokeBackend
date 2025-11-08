@@ -11,6 +11,17 @@ builder.Services.AddSingleton<KaraokeBackend.Services.IQueueService, KaraokeBack
 // Registrar HttpClient factory para consultas externas (YouTube)
 builder.Services.AddHttpClient();
 
+// Habilitar CORS para el frontend
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 // ✅ Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,6 +36,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+
+// Habilitar CORS y archivos estáticos
+app.UseCors();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 // ✅ Mapea controladores
 app.MapControllers();

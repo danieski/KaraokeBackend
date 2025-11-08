@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KaraokeBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77501af70b58e70ba3a1d4230f0d609828f078e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("KaraokeBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KaraokeBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
