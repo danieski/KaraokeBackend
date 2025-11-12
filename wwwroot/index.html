@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karaoke App</title>
-    <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praemiis Karaoke</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Karaoke App</h1>
-        
-        <div class="player-section">
-            <!-- Reproductor de YouTube -->
-            <div id="player"></div>
-            
-            <!-- Cola de reproducción -->
-            <div class="queue-section">
-                <h2>Cola de reproducción</h2>
-                <div id="queue"></div>
-            </div>
-        </div>
+  <div class="container">
+    
+    <!-- Encabezado con logo y título -->
+    <header class="header">
+      <img src="/img/logo.png" alt="Praemiis Logo" class="logo">
+      <h1 class="neon-title">Praemiis</h1>
+    </header>
 
-        <!-- Búsqueda -->
-        <div class="search-section">
-            <h2>Buscar canciones</h2>
-            <div class="search-controls">
-                <input type="search" id="search" placeholder="Buscar canciones...">
-                <button onclick="searchVideos()">Buscar</button>
-            </div>
-            <div class="search-results" id="searchResults"></div>
-        </div>
-
-        <!-- Mensajes de error -->
-        <div id="error" class="error"></div>
+    <!-- Sección de reproductor -->
+    <div class="player-section">
+      <div id="player" class="neon-box"></div>
+      <div class="queue-section neon-panel">
+        <h2>🎵 Cola de reproducción</h2>
+        <div id="queue"></div>
+      </div>
     </div>
 
-    <!-- Cargar primero nuestra aplicación -->
-    <script src="/js/app.js"></script>
-    
-    <!-- YouTube IFrame API -->
-    <script>
-        // Cargar la API de YouTube de forma segura
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    </script>
+    <!-- Búsqueda -->
+    <div class="search-section">
+      <h2>🔍 Buscar canciones</h2>
+      <div class="search-controls">
+        <input type="search" id="search" placeholder="Escribe el nombre de tu canción...">
+        <button onclick="searchVideos()">Buscar</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Recomendaciones -->
+    <section class="recommendations neon-panel">
+      <h2>🎤 Our Recommendations</h2>
+      <ul>
+        <li>🎶 “Let It Be” – The Beatles</li>
+        <li>🎶 “Dancing Queen” – ABBA</li>
+        <li>🎶 “Wonderwall” – Oasis</li>
+      </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <p>Created by <span class="creator">Daniel Esquivel</span></p>
+    </footer>
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script>
+    // Cargar la API de YouTube
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  </script>
 </body>
 </html>
