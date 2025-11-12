@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using KaraokeBackend.Services;
 using KaraokeBackend.Models;
 using System.Net.Http.Json;
+using System.Net;
 
 namespace KaraokeBackend.Controllers
 {
@@ -33,8 +34,36 @@ namespace KaraokeBackend.Controllers
             var url = $"https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q={query}&key={apiKey}";
 
             var client = _httpFactory.CreateClient();
-            var result = await client.GetFromJsonAsync<object>(url);
-            return Ok(result);
+            try
+            {
+                var result = await client.GetFromJsonAsync<object>(url);
+                return Ok(result);
+            }
+            //Tratamos de caputurar error 403 que significa que la api key ha llegado al limite
+            catch (HttpRequestException ex)
+            {
+                // Si hay un error, cambia de api key 
+                if (ex.StatusCode == HttpStatusCode.Forbidden)
+                {
+                    if (apiKey == _config["Youtube:ApiKey"])
+                        apiKey = _config["Youtube:ApiKeyBackup"];
+                    else
+                        apiKey = _config["Youtube:ApiKey"];
+
+                    Console.WriteLine($"Error al llamar a la API de YouTube: {ex.StatusCode} - {ex.Message}");
+                    Console.WriteLine($"Cambiando a API: {apiKey}");
+                }
+                else
+                {
+                    Console.WriteLine($"Error al llamar a la API de YouTube: {ex.Message}");
+                }
+                // Reintentar con la otra API key
+                url = $"https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q={query}&key={apiKey}";
+                var result = await client.GetFromJsonAsync<object>(url);
+                return Ok(result);
+            }
+            
+            
         }
 
         [HttpPost("queue")]
