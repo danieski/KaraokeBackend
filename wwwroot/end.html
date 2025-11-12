@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #00ffc3;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Efecto suave en móviles */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.7rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎶 ¡Gracias por usar el programa!</h1>
+    <p>Tu canción ha sido añadida a la cola. <br> ¡Prepárate para cantar! 🎤</p>
+
+    <div class="footer">
+        Created by: <strong>Daniel Esquivel</strong>
+    </div>
+</body>
+</html>

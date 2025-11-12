@@ -1,25 +1,30 @@
 let lastQuery = '';
-let searchTimeout;
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
-    
-    // Búsqueda con debounce
-    searchInput.addEventListener('input', () => {
-        clearTimeout(searchTimeout);
+    const searchButton = document.getElementById('searchButton');
+
+    // Buscar al presionar el botón
+    searchButton.addEventListener('click', () => {
         const query = searchInput.value.trim();
-        
-        if (query === lastQuery) return;
         if (query.length < 2) {
             document.getElementById('searchResults').innerHTML = '';
             return;
         }
 
-        searchTimeout = setTimeout(() => {
+        if (query !== lastQuery) {
             lastQuery = query;
             searchVideos(query);
-        }, 500);
+        }
+    });
+
+    // Buscar también al presionar Enter
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            searchButton.click();
+        }
     });
 
     // Iniciar actualización periódica de la cola
@@ -53,11 +58,30 @@ async function searchVideos(query) {
 async function addToQueue(videoId, title) {
     try {
         await KaraokeService.addToQueue(videoId, decodeURIComponent(title));
-        showError('¡Añadido a la cola!', 2000);
+
+        // Mostrar mensaje de agradecimiento
+        showMessage('🎵 ¡Gracias por poner la canción! Se ha añadido a la cola. Por favor, sea paciente.');
+
+        // Esperar unos segundos antes de salir
+        setTimeout(() => {
+            window.location.href = 'end.html'; // 👉 Cambia por la página que quieras
+        }, 3000); // espera 3 segundos
+
         updateQueue();
     } catch (error) {
         showError(error.message);
     }
+}
+
+function showMessage(text, duration = 3000) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message success';
+    messageDiv.textContent = text;
+    document.body.appendChild(messageDiv);
+
+    setTimeout(() => {
+        messageDiv.remove();
+    }, duration);
 }
 
 // Actualizar la cola
